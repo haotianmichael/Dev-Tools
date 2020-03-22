@@ -2,27 +2,12 @@
 
 
 
-#### 1. OS 
+*  **OS:       macOS  Mojave10.14**
 
-​	**macOS  Mojave10.14**
+*  **EDITOR:      vim  +  ​Tmux​**
+*  **SHELL:      On-my-zsh​**
 
-
-
-#### 2. Word Editor
-
-​	**vim  +  ​Tmux​**
-
-
-
-#### 3. Shell
-
-​	**On-my-zsh​**
-
-
-
-#### 4. VCS
-
-​	  **Git​**
+*  **CVS:      Git​**
 
 
 
