@@ -4,25 +4,27 @@
 
 #### 1. OS 
 
-​	$macOS$  $Mojave10.14$
+​	**macOS  Mojave10.14**
 
 
 
 #### 2. Word Editor
 
-​	$Vim$  +  $Tmux$
+​	**vim  +  ​Tmux​**
 
 
 
 #### 3. Shell
 
-​	 $On-my-zsh$
+​	**On-my-zsh​**
 
 
 
 #### 4. VCS
 
-​	  $Git$
+​	  **Git​**
+
+
 
 
 
