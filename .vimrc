@@ -72,6 +72,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'morhetz/gruvbox'
 Plugin 'dracula/vim'
+Plugin 'w0ng/vim-hybrid'
 Plugin 'vim-gitgutter'
 Plugin 'lervag/vimtex'
 " 插件列表结束
@@ -82,9 +83,9 @@ filetype plugin indent on
 " 配色方案
 set background=dark
 "colorscheme solarized
-"colorscheme molokai
 "colorscheme dracula
-colorscheme gruvbox
+"colorscheme gruvbox
+colorscheme hybrid 
 
 
 
@@ -225,9 +226,8 @@ set vb t_vb=
 
 
 "airline
-"let g:airline_theme="solarized" 
-let g:airline_theme="gruvbox" 
-"let g:airline_powerline_fonts = 1  
+let g:airline_theme="wombat"
+let g:airline_powerline_fonts = 1  
 let g:airline#extensions#tabline#enabled = 1
 "设置切换Buffer快捷键"
 nnoremap <leader><tab> :bn<CR>
@@ -247,6 +247,18 @@ let g:airline_right_sep = '⮂'
 let g:airline_right_alt_sep = '⮃'
 let g:airline_symbols.branch = '⭠'
 let g:airline_symbols.readonly = '⭤'
+
+let g:airline_section_a = airline#section#create(['mode', ' ', 'branch'])
+let g:airline_section_b = airline#section#create_left(['ffenc', 'hunks', '%F'])
+let g:airline_section_c = airline#section#create(['filetype'])
+let g:airline_section_x = airline#section#create(['%P'])
+let g:airline_section_y = airline#section#create(['%B'])
+let g:airline_section_z = airline#section#create_right(['%l', '%c'])
+
+
+
+
+
 
 ""NerdCommenter
 "<leader>cc   加注释
