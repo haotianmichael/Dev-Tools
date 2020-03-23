@@ -74,7 +74,9 @@ Plugin 'morhetz/gruvbox'
 Plugin 'dracula/vim'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'vim-gitgutter'
+Plugin 'lfv89/vim-interestingwords'
 Plugin 'lervag/vimtex'
+Plugin 'itchyny/vim-cursorword'
 " 插件列表结束
 call vundle#end()
 filetype plugin indent on
@@ -344,3 +346,14 @@ let g:UltiSnipsJumpBackwardTrigger="<C-b>"
 
 "快速跳转
 nmap <Leader>s <Plug>(easymotion-s2)
+
+
+"追踪指定单词  当前buffer最多6个
+noremap <silent> <leader>k :call InterestingWords('n')<cr>
+nnoremap <silent> <leader>K :call UncolorAllWords()<cr>
+
+nnoremap <silent> n :call WordNavigation('forward')<cr>
+nnoremap <silent> N :call WordNavigation('backward')<cr>
+
+
+
