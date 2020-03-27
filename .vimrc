@@ -1,6 +1,5 @@
 " 定义快捷键的前缀，即<Leader>
 let mapleader=";"
-
 " 开启文件类型侦测
 filetype on
 " 根据侦测到的不同类型加载对应的插件 filetype plugin on 
@@ -40,8 +39,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'tomasr/molokai'
 Plugin 'vim-scripts/phd'
+Plugin 'Shougo/defx.nvim'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'derekwyatt/vim-fswitch'
@@ -76,6 +75,7 @@ Plugin 'w0ng/vim-hybrid'
 Plugin 'vim-gitgutter'
 Plugin 'lfv89/vim-interestingwords'
 Plugin 'lervag/vimtex'
+Plugin 'kristijanhusak/defx-icons'
 Plugin 'itchyny/vim-cursorword'
 " 插件列表结束
 call vundle#end()
@@ -151,17 +151,17 @@ set foldmethod=syntax
 set nofoldenable
 
 " 使用 NERDTree 插件查看工程文件。设置快捷键，速记：file list
-nmap <Leader>fl :NERDTreeToggle<CR>
+"nmap <Leader>fl :NERDTreeToggle<CR>
 " 设置NERDTree子窗口宽度
-let NERDTreeWinSize=25
+"let NERDTreeWinSize=25
 " 设置NERDTree子窗口位置
-let NERDTreeWinPos="right"
+"let NERDTreeWinPos="right"
 " 显示隐藏文件
-let NERDTreeShowHidden=1
+"let NERDTreeShowHidden=1
 " NERDTree 子窗口中不显示冗余帮助信息
-let NERDTreeMinimalUI=1
+"let NERDTreeMinimalUI=1
 " 删除文件时自动删除文件对应 buffer
-let NERDTreeAutoDeleteBuffer=1
+"let NERDTreeAutoDeleteBuffer=1
 
 
 
